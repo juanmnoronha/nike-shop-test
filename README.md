@@ -1,4 +1,4 @@
-# Responsive Front-End Test
+# NIKE SHOP TEST
 
 ## HTML
 Layout escalável e modulado seguindo o conceito de componentes
