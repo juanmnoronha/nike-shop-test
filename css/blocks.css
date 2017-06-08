@@ -1,0 +1,261 @@
+/* ==========================================================================
+   @commons
+   ========================================================================== */
+
+.header,
+.main,
+.footer {
+	width: 100%;
+}
+
+.main,
+.section,
+.footer {
+	position: relative;
+}
+
+/* ==========================================================================
+   @header
+   ========================================================================== */
+
+.header {
+	background: #fff;
+	height: 64px;
+	position: fixed;
+	z-index: 3;
+}
+
+.header .brand {	
+	height: 25px;
+	margin-right: 20px;
+	width: 70px;
+}
+
+.header .cart-shop {
+	flex: 1;
+    justify-content: flex-end;
+}
+
+	.header .shop__icon {
+		height: 33px;
+		width: 44px;
+	}
+
+
+/* ==========================================================================
+   @main
+   ========================================================================== */
+
+.main {
+	padding-top: 64px;
+}
+
+/* ==========================================================================
+   @billboard
+   ========================================================================== */
+
+.billboard {
+	width: 100%;
+}
+
+	.billboard__image,
+	.billboard__link {
+		display: block;
+		width: 100%;
+	}
+
+	.billboard__image {
+		z-index: 1;
+	}
+
+	.billboard__link {
+		height: 100%;
+		position: absolute;
+		z-index: 2;
+	}
+
+	.billboard .container {
+		padding: 0;
+	}
+
+	.billboard__content {
+		position: absolute;
+		z-index: 1;
+	}
+
+	.billboard__title {
+		color: #FFF;
+		display: block;
+		font-size: 72px;
+		font-weight: 900;
+		margin-bottom: 12px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.billboard__button {
+		margin: 0 auto;
+	}
+
+/* ==========================================================================
+   @products
+   ========================================================================== */
+
+.products {
+	padding: 55px 0;
+}
+
+.products-filter {
+	align-items: center;
+	border-bottom: 1px solid #CCC;
+	display: flex;
+	margin-bottom: 42px;
+	padding-bottom: 20px;
+	position: relative;
+	width: 100%;
+}
+
+.products-filter .title {
+	color: #010101;
+	font-size: 18px;
+	font-weight: 700;
+	margin-right: 28px;
+}
+
+.products-filter .sort-by {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+}
+
+.prodcuts-filter .button {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.products-headline {
+	padding: 42px 0;
+}
+
+.products-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.products-list .icon--custom {
+	display: inline-block;
+}
+
+.products-list .button {
+	opacity: 0;
+	width: 100%;
+}
+
+.products-list .item {
+	float: left;
+}
+
+/* ==========================================================================
+   @footer
+   ========================================================================== */
+
+.footer {
+	overflow: hidden;
+	height: 74px;
+}
+
+.copy {
+	color: #999;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+
+/* ==========================================================================
+   @media-querie
+   ========================================================================== */
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.products-filter {
+		display: inherit;
+	}
+
+	.products-filter .title {
+		margin-bottom: 12px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.products-filter,
+	.sort-by,
+	.products-list {
+		align-items: stretch;
+		-ms-flex-direction: column;
+		-webkit-box-orient: vertical;
+		flex-direction: column; 
+	}
+
+	.sort-by__list {
+		justify-content: space-between;
+	}
+
+	.products-filter .title {
+		margin-right: 0;
+	}
+
+		.sort-by__list{
+			padding: 20px 0;
+		}
+}
+
+@media (max-width: 767px) {
+	.header .shop__icon {
+		height: 23px;
+		width: 34px;
+	}
+
+	.billboard__title {
+		font-size: 52px;
+		margin-bottom: 8px;
+	}
+
+	.products-filter,
+	.sort-by,
+	.products-list {
+		align-items: stretch;
+		-ms-flex-direction: column;
+		-webkit-box-orient: vertical;
+		flex-direction: column; 
+	}
+
+	.sort-by__list {
+		align-items: stretch;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.sort-by__item {
+		margin-bottom: 10px;
+	}
+
+	.products-filter .title {
+		margin-right: 0;
+	}
+
+		.sort-by__list{
+			padding: 20px 0;
+		}
+}
+
+@media (max-width: 480px) {
+	.billboard__title {
+		font-size: 32px;
+		margin-bottom: 4px;
+	}
+
+	.copy {
+		font-size: 12px;
+	}
+}
